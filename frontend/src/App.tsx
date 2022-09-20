@@ -1,5 +1,5 @@
 import React from 'react';
-import { TodoContents } from './main/TodoContents';
+import { TodoContents } from './main/todoContents';
 import { HeaderContents } from './header/header';
 import { FooterContents } from './footer/footer';
 

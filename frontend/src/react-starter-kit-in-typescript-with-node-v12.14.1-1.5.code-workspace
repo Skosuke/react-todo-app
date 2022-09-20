@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../../../react-starter-kit-in-typescript-with-node-v12.14.1-1.5"
+	},
+	{
+		"path": "../.."
+	}
+],
+  "settings": {
+    "typescript.tsdk": "node_modules/typescript/lib"
+  }
+}

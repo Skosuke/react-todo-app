@@ -1,0 +1,27 @@
+.incomplete-area {
+  width: 48%;
+  float: left;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #d8eeff;
+  height: 600px;
+  margin-right: 4%;
+}
+
+.incomplete-area > .title {
+  color: #83c7ff;
+  text-align: center;
+}
+
+.incomplete-area .lists {
+  color: #1f578a;
+  padding: 10px;
+}
+
+.incomplete-area .lists .list {
+  overflow-wrap: break-word;
+  padding-bottom: 10px;
+}
+
+.incomplete-area .lists .list:nth-of-type(odd) {
+  background-color: #e8f5ff;
+}

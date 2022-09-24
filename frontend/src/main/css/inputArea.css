@@ -1,0 +1,23 @@
+.input-area {
+  background-color: #f6fbff;
+  padding: 10px 0 30px 0;
+  text-align: center;
+}
+
+input {
+  border: 2px solid #9ad1ff;
+  outline: none;
+  width: 600px;
+}
+
+button {
+  color: #0585ee;
+  border: 0px;
+  background-color: #9ad1ff;
+  width: 200px;
+  padding: 0px;
+}
+
+button:active {
+  background-color: #89beea;
+}

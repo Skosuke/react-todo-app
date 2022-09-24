@@ -1,0 +1,9 @@
+.todo-contents::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.todo-contents {
+  margin: 0 4%;
+}

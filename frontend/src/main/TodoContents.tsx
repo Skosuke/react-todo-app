@@ -2,6 +2,7 @@ import React from 'react';
 import { InputArea } from './inputArea';
 import { IncompleteArea } from './incompleteArea';
 import { CompleteArea } from './completeArea';
+import './css/todoContents.css';
 
 export const TodoContents = () => {
   return (

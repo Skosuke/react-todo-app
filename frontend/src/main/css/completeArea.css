@@ -1,0 +1,26 @@
+.complete-area {
+  width: 48%;
+  float: left;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #d8eeff;
+  height: 600px;
+}
+
+.complete-area > .title {
+  color: #83c7ff;
+  text-align: center;
+}
+
+.complete-area .lists {
+  color: #1f578a;
+  padding: 10px;
+}
+
+.complete-area .lists .list {
+  overflow-wrap: break-word;
+  padding-bottom: 10px;
+}
+
+.complete-area .lists .list:nth-of-type(odd) {
+  background-color: #e8f5ff;
+}

@@ -1,14 +1,15 @@
 import React from 'react';
 import { TodoContents } from './main/todoContents';
-import { HeaderContents } from './header/header';
-import { FooterContents } from './footer/footer';
+import { HeaderContents } from './header/main';
+import { FooterContents } from './footer/main';
+import './common/style.css';
 
 function App() {
   return (
     <>
-      <HeaderContents />
+      {/* <HeaderContents /> */}
       <TodoContents />
-      <FooterContents />
+      {/* <FooterContents /> */}
     </>
   );
 }

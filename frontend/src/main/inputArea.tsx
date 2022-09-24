@@ -1,4 +1,5 @@
 import React from 'react';
+import './css/inputArea.css';
 
 export const InputArea = () => {
   return (

@@ -1,11 +1,12 @@
 import React from 'react';
 import './css/inputArea.css';
 
-export const InputArea = () => {
+export const InputArea: (props: any) => JSX.Element = (props) => {
+  const { todoText, onChange, onClick } = props;
   return (
     <div className="input-area">
-      <input placeholder="TODOを入力" />
-      <button>追加</button>
+      <input value={todoText} onChange={onChange} placeholder="TODOを入力" />
+      <button onClick={onClick}>追加</button>
     </div>
   );
 };

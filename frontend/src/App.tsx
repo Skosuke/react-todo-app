@@ -7,9 +7,7 @@ import './common/style.css';
 function App() {
   return (
     <>
-      {/* <HeaderContents /> */}
       <TodoContents />
-      {/* <FooterContents /> */}
     </>
   );
 }

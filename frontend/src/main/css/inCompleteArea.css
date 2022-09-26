@@ -18,10 +18,56 @@
 }
 
 .incomplete-area .lists .list {
+  background-color: #d0ebff;
   overflow-wrap: break-word;
-  padding-bottom: 10px;
+  height: 50px;
+  position: relative;
+}
+
+.incomplete-area .list::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.incomplete-area .lists .list div,
+.incomplete-area .lists .list button {
+  float: left;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+}
+.incomplete-area .lists .list div {
+  padding: 13px;
+}
+
+.incomplete-area .lists .list button {
+  color: #57b5ff;
+  border: 0px;
+  background-color: #cde9ff;
+  width: 13%;
+  padding: 15px;
+}
+
+.incomplete-area .lists .list button:hover {
+  background-color: #e0f2ff;
+}
+
+.incomplete-area .lists .list button:nth-child(2) {
+  right: 13%;
+}
+.incomplete-area .lists .list button:nth-child(3) {
+  right: 0%;
 }
 
 .incomplete-area .lists .list:nth-of-type(odd) {
   background-color: #e8f5ff;
+}
+
+.incomplete-area .lists .list:nth-of-type(odd) button {
+  background-color: #e8f5ff;
+}
+
+.incomplete-area .lists .list:nth-of-type(odd) button:hover {
+  background-color: #f6fbff;
 }

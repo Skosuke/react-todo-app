@@ -14,6 +14,7 @@ export const TodoContents = () => {
   };
 
   const onClickAdd: any = () => {
+    if (todoText === '') return;
     const newTodos: any = [...incompleteTodos, todoText];
     setIncompleteTodos(newTodos);
     setTodoText('');
@@ -44,7 +45,10 @@ export const TodoContents = () => {
     setCompleteTodos(newCompleteTodos);
   };
 
-  console.log(todoText);
+  const disabledJugement: () => Boolean = () => {
+    console.log(incompleteTodos.length >= 2);
+    return incompleteTodos.length >= 10;
+  };
 
   return (
     <>
@@ -53,7 +57,11 @@ export const TodoContents = () => {
           todoText={todoText}
           onChange={onTodoChangeText}
           onClick={onClickAdd}
+          disabled={disabledJugement()}
         />
+        {disabledJugement() && (
+          <p style={{ color: 'red' }}>登録は10個までだよ</p>
+        )}
         <IncompleteArea
           incompleteTodos={incompleteTodos}
           onClickComplete={onClickComplete}

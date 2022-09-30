@@ -9,24 +9,24 @@ export const TodoContents = () => {
   const [incompleteTodos, setIncompleteTodos] = useState([]);
   const [completeTodos, setCompleteTodos] = useState([]);
 
-  const onTodoChangeText: (even: any) => void = (even) => {
+  const onTodoChangeText = (even: any): void => {
     setTodoText(even.target.value);
   };
 
-  const onClickAdd: any = () => {
+  const onClickAdd = (): void => {
     if (todoText === '') return;
     const newTodos: any = [...incompleteTodos, todoText];
     setIncompleteTodos(newTodos);
     setTodoText('');
   };
 
-  const onClickDelete: any = (index: any) => {
+  const onClickDelete = (index: any): void => {
     const newIncompleteTodos = [...incompleteTodos];
     newIncompleteTodos.splice(index, 1);
     setIncompleteTodos(newIncompleteTodos);
   };
 
-  const onClickComplete: any = (index: any) => {
+  const onClickComplete = (index: any): void => {
     const newIncompleteTodos = [...incompleteTodos];
     newIncompleteTodos.splice(index, 1);
 
@@ -36,7 +36,7 @@ export const TodoContents = () => {
     setIncompleteTodos(newIncompleteTodos);
   };
 
-  const onClickrRetrun: any = (index: any) => {
+  const onClickrRetrun = (index: any): void => {
     const newCompleteTodos = [...completeTodos];
     newCompleteTodos.splice(index, 1);
 
@@ -45,7 +45,7 @@ export const TodoContents = () => {
     setCompleteTodos(newCompleteTodos);
   };
 
-  const disabledJugement: () => Boolean = () => {
+  const disabledJugement = (): boolean => {
     console.log(incompleteTodos.length >= 2);
     return incompleteTodos.length >= 10;
   };

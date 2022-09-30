@@ -1,8 +1,19 @@
-import React from 'react';
+import { FC } from 'react';
 import './css/inputArea.css';
 
-export const InputArea: (props: any) => JSX.Element = (props) => {
-  const { todoText, onChange, onClick, disabled } = props;
+type InputAreaProps = {
+  onChange: React.ChangeEventHandler<HTMLInputElement>;
+  todoText: string | number | readonly string[];
+  onClick: React.MouseEventHandler<HTMLButtonElement> | undefined;
+  disabled: boolean | undefined;
+};
+
+export const InputArea: FC<InputAreaProps> = ({
+  todoText,
+  onChange,
+  onClick,
+  disabled,
+}) => {
   return (
     <div className="input-area">
       <input

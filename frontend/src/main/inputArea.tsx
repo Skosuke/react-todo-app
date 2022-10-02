@@ -1,12 +1,12 @@
 import { FC } from 'react';
 import './css/inputArea.css';
 
-type InputAreaProps = {
+interface InputAreaProps {
   onChange: React.ChangeEventHandler<HTMLInputElement>;
   todoText: string | number | readonly string[];
   onClick: React.MouseEventHandler<HTMLButtonElement> | undefined;
   disabled: boolean | undefined;
-};
+}
 
 export const InputArea: FC<InputAreaProps> = ({
   todoText,
@@ -27,4 +27,9 @@ export const InputArea: FC<InputAreaProps> = ({
       </button>
     </div>
   );
+};
+
+InputArea.defaultProps = {
+  disabled: false,
+  todoText: '',
 };
